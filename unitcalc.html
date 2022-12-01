@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imperial to Metric Convert</title>
+        <link rel="stylesheet" href = "styles.css">       
+    </head>
+
+    <body>
+        <a href = "index.html">Home</a>
+        <div class="calcbackground">
+            <h1 class = "calctitle">Imperial to Metric</h1>
+            <div class = "calcbackground">
+                <h2>Pounds to Kilograms</h2>
+                <p>Type a value in pounds to convert that value to kilograms:</p>
+
+                <p>
+                    <label>Pounds</label>
+                    <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+                </p>
+                <p>Kilograms: <span id="outputKilograms"></span></p>
+            </div>
+        </div>
+
+        <div class = "calcbackground1">
+            <h2>Miles to Kilometers</h2>
+            <p>Type a value in miles to convert that value to kilometers:</p>
+            <p>
+                <label>Miles</label>
+                <input id="inputPounds" type="number" placeholder="Miles" oninput="velocityConverter(this.value)" onchange="velocityConverter(this.value)">
+            </p>
+
+            <p>Kilometers: <span id="outputmiles"></span></p>
+
+        </div>
+
+        <div class = "calcbackground2">
+
+            <h2>Fahrenheit to Celcius</h2>
+            <p>Type a fahrenheit value to convert to celcius:</p>
+            <p>
+                <label>Fahrenheit</label>
+                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="tempConverter(this.value)" onchange="tempConverter(this.value)">
+            </p>
+
+            <p>Celcius: <span id="outputfahrenheit"></span></p>
+        </div>
+        <script src = "calculatorscript.js"></script>
+    </body>
+</html>

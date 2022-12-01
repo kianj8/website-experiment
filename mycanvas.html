@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Canvas</title>
+        <link rel="stylesheet" href="styles.css" > 
+    </head>
+
+
+    <body>
+        <a href = "index.html">Home</a>
+        <h1>Stick man waves hi to you (he is in a good mood).</h1>
+        <div>
+            <canvas id="myCanvas" width="2000" height="1000"></canvas>
+        </div>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var turtle;  
+            var arm; 
+            var y=250;
+            function bob(){
+                
+                
+                var turtle = c.getContext("2d");
+
+                turtle.strokeStyle = "black";
+                turtle.fillStyle = "white";               
+                
+                
+                turtle.moveTo(500, 400);
+                turtle.lineTo(500, 250);
+                
+                turtle.moveTo(500, 400);
+                turtle.lineTo(400, 500);
+                turtle.moveTo(500, 400);
+                turtle.lineTo(600, 500);
+
+                turtle.moveTo(500, 300);
+                turtle.lineTo(400, 300);
+
+                turtle.moveTo(500,200);
+                turtle.arc(500, 200, 50, 0, 2*Math.PI);
+                turtle.stroke(); 
+                turtle.fill();
+                            
+            }
+
+            function arm(){
+
+                var arm = c.getContext("2d");
+                arm.beginPath();
+                arm.clearRect(0,0,2000,1000);
+       
+                console.log(y);
+                arm.moveTo(500,300);
+                
+                arm.lineTo(600,y);
+
+                if( y == 250){
+                    y = 200;
+                } else{
+                    y = 250;
+                }
+                arm.closePath();
+                arm.stroke();
+                
+            }
+            
+            arm();
+
+            setInterval(arm,1000);
+            setInterval(bob,10);
+            
+
+
+            
+            
+            
+        </script>
+
+    </body>
+</html>

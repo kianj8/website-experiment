@@ -1,0 +1,64 @@
+.title{
+    color:green;
+    margin-left: 10%;
+}
+.poem{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 10px;
+    border-style:groove;
+    padding:20px;
+}
+.about{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 10px;
+    border-style:dashed;
+    padding:20px;  
+}
+.lists{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 10px;
+    border-style:dashed;
+    padding:20px;  
+}
+.calc{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 10px;
+    border-style:inset;
+    padding:20px;
+}
+.calcbackground{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background-color: #34568B;
+    padding: 20px;
+    border: 10px;
+}
+.calctitle{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background-color: #92A8D1;
+    padding: 20px;
+    border: 10px;
+}
+.calcbackground1{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background-color: #8fa0c2;
+    padding: 20px;
+    border: 10px;
+}
+.calcbackground2{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background-color: #a4aec4;
+    padding: 20px;
+    border: 10px;
+}
